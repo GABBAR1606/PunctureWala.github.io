@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Photos/Website Logo.jpg" type="image/x-icon" />
+    <title>Puncture Wala</title>
+  </head>
+  <body>
+    <!-- header starts here -->
+    <header>
+      <span class="left">
+        <h1>Puncture Wala</h1>
+      </span>
+      <a href="#" class="toggle-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <span class="links">
+        <ul class="right">
+          <a href="/" id="homea" class="al activated">Home</a>
+          <a href="/" id="servicesa" class="al">Services</a>
+          <a href="/" id="reviewsa" class="al">About Us</a>
+        </ul>
+      </span>
+    </header>
+    <!-- header ends here -->
+    <div class="all3">
+      <!-- main body starts here -->
+      <div class="main">
+        <div class="mainbody1 imgs">
+          <img src="./Photos/Fifity Off.jpg" alt="Img" />
+          <!-- <img src="./Photos/Car.jpg" alt="Img" /> -->
+        </div>
+        <div class="mainbody2">
+          <div class="detailsbox">
+            <div class="heading">
+              <h3>Enter the details to get a nearby Puncture man.</h3>
+            </div>
+            <div class="information">
+              <form>
+                <label for="name">Name :</label>
+                <input
+                  id="nameinputed"
+                  required
+                  type="text"
+                  name="fullname"
+                  placeholder="Enter your full name"
+                />
+                <label>Phone number :</label>
+                <input
+                  type="number"
+                  id="ageinputed"
+                  required
+                  placeholder="Your number"
+                />
+                <label for="car-company">Car Company</label>
+                <select required id="carinputed">
+                  <option value="car-company" selected disabled>
+                    ---Select car company---
+                  </option>
+                  <option value="Maruti Suzuki">Maruti Suzuki</option>
+                  <option value="Hyundai">Hyundai</option>
+                  <option value="Tata Motors">Tata Motors</option>
+                  <option value="Kia">Kia</option>
+                  <option value="Mahindra">Mahindra</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Renault">Renault</option>
+                  <option value="Honda">Honda</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label for="problem">Problem</label>
+                <select required id="probleminputed">
+                  <option value="Problem" selected disabled>
+                    ---Select a Problem---
+                  </option>
+                  <option value="Puncture">Puncture</option>
+                  <option value="Out-of-Fuel">Out of Fuel</option>
+                  <option value="Engine-Heat">Engine Heat</option>
+                  <option value="Not-Starting">Not Starting</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label for="Location">Location</label>
+                <select required id="locationinputed">
+                  <option value="Location" selected disabled>
+                    ---Select Location---
+                  </option>
+                  <option value="Kudasan">Kudasan</option>
+                  <option value="Raysan">Raysan</option>
+                  <option value="Nikol">Nikol</option>
+                  <option value="Nana-Chiloda">Nana Chiloda</option>
+                  <option value="Sargasan">Sargasan</option>
+                  <option value="Sector-1,2,3">Sector-1,2,3</option>
+                  <option value="Sector-4,5,6">Sector-4,5,6</option>
+                  <option value="Sector-7,8,9">Sector-7,8,9</option>
+                  <option value="Sector-10,11,12">Sector-10,11,12</option>
+                </select>
+                <div class="submarspecial">
+                  <input type="submit" id="infosub" value="Submit" />
+                </div>
+              </form>
+            </div>
+            <div class="result hider" id="result">
+              <h3>The Details of nearby Puncture man are</h3>
+              <span class="res1">
+                <h2 id="res1name">Name: puncturewalabhai</h2>
+                <h2 id="res1number">Phone number: ----------</h2>
+                <h2 id="res1location">location: xxxxxxxx</h2>
+              </span>
+              <span class="res2">
+                <h2 id="res2name">Name: puncturewalabhai</h2>
+                <h2 id="res2number">Phone number: ----------</h2>
+                <h2 id="res2location">location: xxxxxxxx</h2>
+              </span>
+              <span class="res3">
+                <h2 id="res3name">Name: puncturewalabhai</h2>
+                <h2 id="res3number">Phone number: ----------</h2>
+                <h2 id="res3location">location: xxxxxxxx</h2>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mainbody3">
+          <div class="imgcarshop"><img src="./Photos/Tyre Photo.jpg" alt="Image" /></div>
+          <div class="allservices">
+            <div class="carspa">Car Wash</div>
+            <div class="caroil">Oiling</div>
+            <div class="car-wiring">Wiring</div>
+            <div class="full-service">Full Service</div>
+          </div>
+          <div class="servicesdetailes">Contact : +91 9922992299</div>
+        </div>
+      </div>
+      <!-- main body ends here -->
+
+      <!-- rating starts here -->
+      <div class="ratingpart">
+        <div class="averagerat" id="averagerat"></div>
+        <div class="rate">
+          <label for="Please-Rate-us">Please Rate us</label>
+          <select required id="Please-Rate-us">
+            <option value="Please-Rate-us" selected disabled>
+              ---Rate Us---
+            </option>
+            <option value="Please-Rate-us">1</option>
+            <option value="Please-Rate-us">2</option>
+            <option value="Please-Rate-us">3</option>
+            <option value="Please-Rate-us">4</option>
+            <option value="Please-Rate-us">5</option>
+            <input type="submit" id="ratsub" value="Post" />
+          </select>
+          <div class="thx" id="thx">Thank You for your time!</div>
+        </div>
+      </div>
+      <!-- rating ends here -->
+      <div class="hea">
+        <h1>About US</h1>
+        <div class="about-us">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+          obcaecati accusamus quaerat porro saepe sit minus totam explicabo
+          error adipisci. Sapiente, cupiditate. Ut porro vel dignissimos
+          pariatur laudantium quibusdam ex optio. Magnam molestiae sapiente vel,
+          earum nobis unde distinctio beatae repellat ipsum aperiam quisquam
+          dolor. Aperiam molestias omnis eum autem provident aut et dolorem
+          incidunt architecto deleniti maiores aliquam optio, odio suscipit odit
+          eligendi nihil repellat voluptatum error ipsa qui quidem consequuntur,
+          dignissimos esse? Vitae placeat rem iusto, quas est neque nesciunt
+          sunt qui repudiandae temporibus amet eos animi earum quaerat
+          voluptatum commodi molestiae ducimus. Ipsam similique commodi aliquam
+          vero ullam at autem enim rem illo nihil ratione culpa possimus illum
+          itaque eligendi praesentium natus, consequuntur, in laborum minima
+          harum quasi tempora odit. Odio omnis unde quisquam, porro nihil quod
+          iusto. Corporis aliquid voluptatibus error esse fugiat alias nulla
+          praesentium autem minus voluptatum eveniet facilis ipsam aliquam
+          doloribus numquam ex, nemo aut dolore animi inventore soluta
+          obcaecati? Molestias tenetur nesciunt iste facere placeat molestiae
+          dicta sint odit quam, incidunt harum cum quisquam. Unde, accusantium
+          placeat eveniet suscipit alias dolorum exercitationem. Labore aliquam
+          illo iste possimus sit nobis quo omnis hic quod? Officiis, molestiae
+          commodi impedit amet sint culpa veritatis consequuntur dolore, autem
+          perferendis enim eius tenetur. Veritatis ea at pariatur doloribus,
+          fuga corrupti velit labore similique ipsa perferendis nemo odit
+          voluptates sapiente nostrum porro consequatur autem necessitatibus ab
+          assumenda voluptatum. Maiores dolorum eum animi quaerat modi ex
+          asperiores vel quis eius amet eligendi optio nam debitis temporibus
+          possimus et delectus, dignissimos necessitatibus maxime voluptate
+          atque. Harum odit assumenda modi veniam tempore explicabo placeat,
+          eveniet quod laudantium ex veritatis libero architecto voluptatum
+          voluptatem aliquam voluptas. Nisi, labore! Sed, at? Veniam eius
+          quaerat vitae, officiis fugit esse harum corporis sit, quidem magni,
+          exercitationem aut id? Ut, repudiandae esse eveniet rem at sed culpa
+          ad veniam incidunt rerum sunt ratione nobis officia repellendus
+          voluptatum, sequi accusantium praesentium aliquid voluptatibus
+          voluptates vel! Beatae nam tempore dolor, officia blanditiis quis
+          aliquam aspernatur libero corrupti ipsam et sit est! Ullam, quia?
+          Laudantium totam exercitationem placeat, veniam impedit nisi ratione
+          ea quam sed illum provident alias culpa quasi. Nisi, reiciendis
+          facere! Numquam, ut! Pariatur adipisci sequi molestias alias aliquid,
+          quae voluptas magni repellat dignissimos quis amet delectus. Obcaecati
+          quis porro, veritatis rerum inventore a quia dicta quas expedita eius
+          ut similique ipsa reprehenderit, tenetur quidem saepe minus optio
+          modi. Qui nemo iure provident veritatis esse ad sit aliquam, sint
+          numquam beatae quidem, dolores necessitatibus odio ratione. Mollitia
+          nisi delectus quod assumenda cumque ipsam sint soluta dolorum dicta
+          blanditiis reprehenderit tenetur, optio nesciunt ea et provident
+          similique, magnam nemo voluptate aliquam. Nesciunt eveniet autem
+          voluptas obcaecati, at, officia quia expedita asperiores minima
+          similique provident vero temporibus mollitia libero nemo maiores
+          doloribus. Consequatur omnis voluptates suscipit temporibus laudantium
+          nostrum labore alias natus officia doloremque laboriosam consequuntur
+          magni ratione, architecto id nobis. Delectus, perspiciatis deserunt
+          quae aliquam voluptates soluta eos iure. Molestiae cum velit rem,
+          dolorum sunt suscipit quibusdam tempora praesentium error magni esse
+          atque, non quisquam sequi incidunt excepturi qui! Dolores, libero
+          officia fuga excepturi harum soluta commodi doloremque, ex voluptatem
+          mollitia facilis eum modi quos animi debitis repudiandae earum sed ab.
+          Quam distinctio optio reiciendis hic corrupti! Iure repellat, veniam
+          nihil reiciendis nam est ipsa. Maiores pariatur deserunt culpa
+          veritatis enim maxime nihil deleniti atque dolores, quidem suscipit,
+          vitae harum quia libero quasi architecto rem quos magnam sapiente fuga
+          consectetur. Fugit earum eos accusantium cupiditate, fuga rem adipisci
+          ipsam accusamus libero id sit pariatur incidunt tempora! Eos rem iste,
+          sit eum natus, voluptates eaque provident cum recusandae sint, facilis
+          alias quidem perferendis architecto dicta distinctio consectetur at
+          tempora soluta iure voluptatum animi saepe delectus! Quo commodi
+          repellendus quos maiores ipsam iure quasi, voluptatum odit officia ex
+          unde. Porro esse, cupiditate vitae animi est similique eos, rem alias
+          dignissimos nesciunt modi exercitationem laboriosam deleniti quidem
+          perferendis voluptates hic ducimus quas cum quae odit minus
+          accusantium ad aspernatur? Quae qui, aut deserunt repellendus dolor
+          dolores maxime expedita labore ut delectus asperiores amet tempora in
+          fugiat ratione. Natus minima perspiciatis commodi cum illum, aliquid
+          inventore adipisci laborum est animi totam sint ducimus, id aperiam,
+          recusandae blanditiis officia nobis? Fugiat, asperiores. Repellendus
+          aliquid tempora ullam dicta doloribus nesciunt alias repudiandae
+          cupiditate nemo laudantium voluptatem provident necessitatibus
+          eveniet, et deserunt! Dicta esse nesciunt architecto amet quidem
+          laboriosam molestias obcaecati, sed nisi aperiam, corrupti quo
+          accusantium mollitia sunt dolorum reprehenderit officia debitis veniam
+          eaque. Laudantium eos facere labore cupiditate at deserunt odio
+          aperiam omnis aut ea dolorem ratione quas illo molestias sit,
+          similique quidem libero ex expedita magni, vel, modi eaque quos quia?
+          Necessitatibus veritatis quis dignissimos veniam earum consequuntur
+          natus numquam non quasi officiis repudiandae, iusto ipsum dolorem
+          reprehenderit exercitationem! Deleniti, at nam fugit recusandae
+          numquam officiis? Numquam eum blanditiis aliquid sint amet est eaque
+          reiciendis illum, quibusdam ratione reprehenderit minima, culpa veniam
+          cumque porro a quam commodi ab quia eveniet, pariatur voluptatibus
+          explicabo quos. Quaerat similique assumenda quidem fuga, rerum hic
+          quam consequuntur reiciendis non obcaecati deleniti at veritatis
+          corrupti temporibus beatae. Vero qui ex in natus debitis ipsa,
+          sapiente asperiores? Deserunt mollitia ullam magni, voluptatem
+          necessitatibus earum inventore quod reiciendis quam fuga, modi dolor
+          odit voluptate quia eum impedit similique, eligendi iusto? Recusandae
+          quis molestias libero. Omnis assumenda explicabo, corrupti asperiores,
+          ratione reiciendis non autem doloribus exercitationem dicta nesciunt
+          odit ex ad earum architecto ea expedita similique iusto dignissimos
+          magni. Nam recusandae praesentium minima aspernatur ea est eum in,
+          aliquid quas reiciendis perspiciatis nobis earum voluptatum deserunt
+          sunt porro non dolorem voluptatem ad similique odio iste! Velit enim
+          quam fugit totam possimus quae quo molestiae est, harum laboriosam
+          distinctio laborum laudantium dolore ratione eligendi debitis id nemo
+          odit sequi asperiores quibusdam rerum rem minima! Laborum magnam
+          explicabo a, optio ullam at facilis animi repellat dolores possimus
+          ratione minima cum consequatur expedita earum autem minus ducimus eos,
+          deleniti maxime. Beatae, quod ullam incidunt expedita dolore animi
+          natus nihil cumque commodi maiores totam error. Architecto voluptatem
+          sit, veniam nemo dignissimos quaerat ex incidunt quasi consectetur
+          eveniet ut, eaque distinctio maiores rem saepe modi quidem sunt?
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>

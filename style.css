@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+}
+
+.left h1 {
+    font-size: 42px;
+    padding: 12px 0px 0px 0px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right a {
+    font-size: 20px;
+    margin: 20px;
+    padding: 2px 20px;
+}
+
+.right a:hover {
+    color: rgb(172, 163, 163);
+    background-color: rgb(77, 76, 76);
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.right .activated{
+    scale: 2;
+    text-decoration:underline;
+    color: rgb(212, 95, 95);
+}
+
+
+.all3 {
+    background-color: bisque;
+}
+
+/* mainbody */
+.main {
+    margin: 80px 0px 0px 0px;
+}
+
+.mainbody1 {
+    /* border: 2px solid black; */
+    background-color: bisque;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white;
+
+}
+
+.mainbody2 {
+    padding: 50px 0px;
+    border-bottom: 2px dotted rgb(0, 0, 0);
+    background-color: bisque;
+}
+
+.information {
+    margin-top: 15px;
+}
+.information form label,
+.information form select,
+.information form select option,
+.submarspecial
+{
+    margin-top: 15px;
+}
+.submarspecial input{
+    padding: 6px 20px;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+.submarspecial input:hover{
+    color: white;
+    background-color: black;
+}
+.submarspecial input:active{
+    position: relative;
+    top: 2px;
+}
+
+.information label {
+    font-size: 18px;
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+
+.mainbody2 .result {
+    margin: 60px;
+    text-align: center;
+}
+
+.hider {
+    display: none;
+}
+
+.res1,
+.res2,
+.res3 {
+    display: inline-block;
+    margin: 15px 20px 0px 20px;
+}
+
+.result h2 {
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.mainbody2 h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.mainbody3 {
+    padding: 50px 0px;
+    border-bottom: 2px dotted rgb(0, 0, 0);
+    margin-top: 60px;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.mainbody3 img {
+    display: inline-block;
+    padding-bottom: 80px;
+    height: 100px;
+    width: 100px;
+}
+
+.allservices {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.full-service {
+    background: url(./Photos/Full\ Service.jpg) center;
+}
+
+.caroil {
+    background: url(./Photos/Oil.jpg) center;
+}
+
+.car-wiring {
+    background: url(./Photos/Wiring.jpg) center;
+}
+
+.carspa {
+    background: url(./Photos/Car\ Wash.jpg) center;
+}
+
+.carspa,
+.caroil,
+.car-wiring,
+.full-service {
+    display: inline-block;
+    font-size: 20px;
+    color: blueviolet;
+    height: 250px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.carspa:hover,
+.caroil:hover,
+.car-wiring:hover,
+.full-service:hover {
+    scale: 1.1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.full-service:hover {
+    animation-name: animation4;
+}
+
+.car-wiring:hover {
+    animation-name: animation3;
+}
+
+.caroil:hover {
+    animation-name: animation2;
+}
+
+.carspa:hover {
+    animation-name: animation1;
+}
+.servicesdetailes{
+    display: inline-block;
+    height: 60px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-size:29px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.ratingpart {
+    padding: 50px 0px;
+    border-bottom: 2px dotted rgb(0, 0, 0);
+    margin-top: 20px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.averagerat {
+    text-align: center;
+    font-size: 30px;
+}
+
+.rate {
+    margin: 10px;
+    text-align: center;
+}
+
+.rate label,
+.rate input {
+    font-size: 16px;
+    margin: 20px;
+}
+
+#thx {
+    font-size: 26px;
+}
+
+.thx {
+    display: none;
+}
+
+.about-us{
+    text-align: justify;
+    margin: 50px 30px 20px 30px;
+}
+.hea h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animation4 {
+    0% {
+        background: url(./Photos/Full\ Service.jpg) center;
+    }
+
+    50% {
+        background: url(./Photos/Tyre\ Photo.jpg) center;
+    }
+
+    100% {
+        background: url(./Photos/Price\ 5000.png) center;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        background: url(./Photos/Wiring.jpg) center;
+    }
+
+    50% {
+        background: url(./Photos/Tyre\ Photo.jpg) center;
+    }
+
+    100% {
+        background: url(./Photos/Price\ 2000.png) center;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        background: url(./Photos/Oil.jpg) center;
+    }
+
+    50% {
+        background: url(./Photos/Tyre\ Photo.jpg) center;
+    }
+
+    100% {
+        background: url(./Photos/Price\ 1000.png) center;
+    }
+}
+
+@keyframes animation1 {
+    0% {
+        background: url(./Photos/Car\ Wash.jpg) center;
+    }
+
+    50% {
+        background: url(./Photos/Tyre\ Photo.jpg) center;
+    }
+
+    100% {
+        background: url(./Photos/Price\ 500.png) center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+/* nav adjustment */
+@media (max-width: 750px) {
+    .right a {
+        margin: 10px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+}
+
+/* toggle button */
+@media (max-width: 600px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    header {
+        display: block;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .right a {
+        display: none;
+        margin: 5px auto;
+    }
+
+    .active .right a {
+        display: flex;
+    }
+
+    .active .right {
+        margin-top: 30px;
+        flex-direction: column;
+        width: 100%;
+    }
+}
